@@ -56,5 +56,43 @@ public class DojoTest {
         // TODO review the generated test code and remove the default call to fail.
       
     }
+
+	@Test
+    public void testCheck1() {
+       // System.out.println("check");
+        String input = "1700";
+        String expResult = "Not a Leap Year";
+        String result = Dojo.check(input);
+        System.out.println("Not a Leap Year");
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+      
+    }
     
+
+	
+	@Test
+    public void testCheck2() {
+       // System.out.println("check");
+        String input = "1600";
+        String expResult = "Leap Year";
+        String result = Dojo.check(input);
+        System.out.println("Leap Year");
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+      
+    }
+
+	
+	@Test
+    public void testCheck3() {
+       // System.out.println("check");
+        String input = "2008";
+        String expResult = "Not a Leap Year";
+        String result = Dojo.check(input);
+        System.out.println("Not a Leap Year");
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+      
+    }
 }
